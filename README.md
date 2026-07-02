@@ -29,6 +29,7 @@ handoff document so another agent can continue the work.
 - [grill-with-docs](/grill-with-docs/SKILL.md) - Grilling session that 
 challenges your plan against the existing domain model, sharpens terminology,
 and updates `CONTEXT.md` and ADRs inline.
+- [domain-modeling](/domain-modeling/SKILL.md) - Actively build and sharpen a project's domain model — challenge terms against the glossary, stress-test with edge-case scenarios, and update `CONTEXT.md` and ADRs inline.
 
 **Model-invoked**:
 
