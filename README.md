@@ -30,7 +30,6 @@ handoff document so another agent can continue the work.
 - [grill-with-docs](/grill-with-docs/SKILL.md) - Grilling session that 
 challenges your plan against the existing domain model, sharpens terminology,
 and updates `CONTEXT.md` and ADRs inline.
-- [domain-modeling](/domain-modeling/SKILL.md) - Actively build and sharpen a project's domain model — challenge terms against the glossary, stress-test with edge-case scenarios, and update `CONTEXT.md` and ADRs inline.
 - [setup-matt-pocock-skills](/setup-matt-pocock-skills/SKILL.md) — Configure this repo for the engineering skills: issue tracker, triage labels, and domain docs layout.
 - [triage](/triage/SKILL.md) — Move issues and external PRs through a state machine of triage roles, verify claims, and write agent-ready briefs.
 - [to-prd](/to-prd/SKILL.md) — Turn the current conversation into a PRD and publish it to the project issue tracker.
@@ -39,6 +38,7 @@ and updates `CONTEXT.md` and ADRs inline.
 
 **Model-invoked**:
 
+- [domain-modeling](/domain-modeling/SKILL.md) - Actively build and sharpen a project's domain model — challenge terms against the glossary, stress-test with edge-case scenarios, and update `CONTEXT.md` and ADRs inline.
 - [code-review](/code-review/SKILL.md) — Two-axis review of the diff since a fixed point: Standards (does it follow the repo's coding standards, plus a Fowler smell baseline?) and Spec (does it faithfully implement the originating issue/PRD?), run as parallel sub-agents so neither pollutes the other.
 - [tdd](/tdd/SKILL.md) — Test-driven development guidance for red → green tracer-bullet loops with behavior-first seams and durable tests.
 
