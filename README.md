@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-07-04
+last-updated: 2026-08-01
 ---
 
 # Personal SKILLs
@@ -38,6 +38,8 @@ and updates `CONTEXT.md` and ADRs inline.
 
 **Model-invoked**:
 
+- [acquire-tools](/acquire-tools/SKILL.md) — Preview a missing-tool plan, use
+an appropriate runner, and inspect the resulting artifacts and assets.
 - [domain-modeling](/domain-modeling/SKILL.md) - Actively build and sharpen a project's domain model — challenge terms against the glossary, stress-test with edge-case scenarios, and update `CONTEXT.md` and ADRs inline.
 - [code-review](/code-review/SKILL.md) — Two-axis review of the diff since a fixed point: Standards (does it follow the repo's coding standards, plus a Fowler smell baseline?) and Spec (does it faithfully implement the originating issue/PRD?), run as parallel sub-agents so neither pollutes the other.
 - [tdd](/tdd/SKILL.md) — Test-driven development guidance for red → green tracer-bullet loops with behavior-first seams and durable tests.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Acquire Tools"
+  short_description: "Preview, acquire, and inspect missing tools"
+  default_prompt: "Use $acquire-tools to preview a missing-tool plan, run it, and inspect the resulting artifacts."
