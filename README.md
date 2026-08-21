@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-01
+last-updated: 2026-08-21
 ---
 
 # Personal SKILLs
@@ -19,8 +19,12 @@ last-updated: 2026-08-01
 or design until every branch of the decision tree is resolved.
 - [handoff](/handoff/SKILL.md) — Compact the current conversation into a 
 handoff document so another agent can continue the work.
-- [writing-great-skills](/writing-great-skills/SKILL.md) — Reference for writing and editing skills well: the vocabulary and principles that make a skill predictable.
-
+- [writing-great-skills](/writing-great-skills/SKILL.md) — Reference for writing
+and editing skills well: the vocabulary and principles that make a skill
+predictable.
+- [write-better-english](/write-better-english/SKILL.md) — Turn settled ideas
+in Chinese, English, or both into natural, context-appropriate English while
+preserving meaning and voice.
 
 ## Engineering
 
