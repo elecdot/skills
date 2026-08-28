@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-21
+last-updated: 2026-08-29
 ---
 
 # Personal SKILLs
@@ -8,8 +8,9 @@ last-updated: 2026-08-21
 
 - [mattpocock/skills](https://github.com/mattpocock/skills)
     - `grilling`, `handoff`, `writing-great-skills`, `grill-with-docs`, 
-    `zoom-out`, `code-review`, `ask-matt`, `tdd`, `to-issues`, `to-prd`,
-    `improve-codebase-architecture`, `setup-matt-pocock-skills`, `triage`
+    `zoom-out`, `code-review`, `ask-matt`, `tdd`, `to-tickets`, `to-spec`,
+    `improve-codebase-architecture`, `setup-matt-pocock-skills`, `triage`,
+    `domain-modeling`
 - [skills.sh](https://www.skills.sh/)
     - `find-skills`
 
@@ -36,8 +37,8 @@ challenges your plan against the existing domain model, sharpens terminology,
 and updates `CONTEXT.md` and ADRs inline.
 - [setup-matt-pocock-skills](/setup-matt-pocock-skills/SKILL.md) — Configure this repo for the engineering skills: issue tracker, triage labels, and domain docs layout.
 - [triage](/triage/SKILL.md) — Move issues and external PRs through a state machine of triage roles, verify claims, and write agent-ready briefs.
-- [to-prd](/to-prd/SKILL.md) — Turn the current conversation into a PRD and publish it to the project issue tracker.
-- [to-issues](/to-issues/SKILL.md) — Break a plan, spec, or PRD into independently-grabbable vertical-slice issues on the issue tracker.
+- [to-spec](/to-spec/SKILL.md) - Turn the current conversation into a spec and publish it to the issue tracker. No interview, just synthesizes what you've already discussed.
+- [to-tickets](/to-tickets/SKILL.md) - Break any plan, spec, or conversation into a set of tracer-bullet tickets, each declaring its blocking edges, written as text in a local file, or as native blocking links on a real tracker.
 - [improve-codebase-architecture](/improve-codebase-architecture/SKILL.md) — Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.
 
 **Model-invoked**:
