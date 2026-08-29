@@ -48,11 +48,15 @@ Where the ladder decides _how far down_ a piece sits, **co-location** decides _w
 **Granularity** is how finely you divide skills, and each cut spends one of the two loads, so split only when the cut earns it. Two cuts:
 
 - **By invocation** — split off a **model-invoked** skill when you have a distinct **leading word** that should trigger it on its own, or another skill must reach it. You pay **context load** for the new always-loaded **description**, so that independent reach has to be worth it.
-- **By sequence** — split a run of **steps** when the steps still ahead (a step's **post-completion steps**) tempt the agent to rush the one in front of it (**premature completion**). Keeping them out of view encourages the agent to do more **legwork** on the current task.
+- **By sequence** — split a run of **steps** when the steps still ahead (a step's **post-completion steps**) tempt the agent to rush the one in front of it (**premature completion**). Keeping them out of view encourages the agent to do more **legwork** on the current task. Merging them again re-exposes those later steps; do it only when the earlier completion criterion remains sharp with them in view.
 
 ## Pruning
 
-Keep each meaning in a **single source of truth**: one authoritative place, so changing the behaviour is a one-place edit.
+Keep each meaning in a **single source of truth**: one authoritative place within the skill and its disclosed references, so changing the behaviour is a one-place edit.
+
+A skill earns its load by supplying knowledge or steering the agent cannot reliably recover from its defaults or environment at the moment of use. Treat this as a pruning heuristic, not a purity test.
+
+The environment (`package.json`, configuration, directory layout, `--help` output) is a source of truth too. Copying a fact from it into the skill creates a **cache**; keep one only when the lookup is expensive, unreliable, or would repeatedly distract from the skill's job. Prefer recording what the environment cannot expose: reasons, unwritten conventions, and non-obvious gotchas.
 
 Check every line for **relevance**: does it still bear on what the skill does?
 
@@ -71,12 +75,18 @@ Hunt for opportunities to refactor skills to use leading words. A triad spelled 
 
 You win twice over: fewer tokens, _and_ a sharper hook for the agent to hang its thinking on. Assume every skill is carrying restatements that leading words retire — go find them.
 
+## Positive steering
+
+State the target behaviour so the agent has somewhere definite to go. A prohibition that only names the unwanted behaviour is **negation**: it activates the very idea it is trying to suppress. Keep negation when it is a necessary routing boundary or hard guardrail, and pair it with the positive branch or behaviour the agent should take instead.
+
 ## Failure modes
 
 Use these to diagnose issues the user may be having with the skill.
 
 - **Premature completion** — ending a step before it's genuinely done, attention slipping to _being done_. Defence, in order: sharpen the completion criterion first (cheap, local); only if it is irreducibly fuzzy _and_ you observe the rush, hide the post-completion steps by splitting (the sequence cut).
+- **Negation** — steering that names the forbidden behaviour without giving the agent a positive target. Keep necessary exclusions and hard guardrails, but pair them with what to do instead.
 - **Duplication** — the same meaning in more than one place. Costs maintenance and tokens, and inflates a meaning's prominence on the ladder past its real rank.
+- **Cache** — an environmental fact copied into the skill even though the agent can look it up. Keep the copy only when the lookup cost or unreliability earns the maintenance risk.
 - **Sediment** — stale layers that settle because adding feels safe and removing feels risky. The default fate of any skill without a pruning discipline.
 - **Sprawl** — a skill simply too long, even when every line is live and unique. Hurts readability and maintainability and wastes tokens. The cure is the ladder: disclose **reference** behind pointers, and split by **branch** or sequence so each path carries only what it needs.
 - **No-op** — a line the model already obeys by default, so you pay load to say nothing. The test: does it change behaviour versus the default? A weak leading word (_be thorough_ when the agent is already thorough-ish) is a no-op; the fix is a stronger word (_relentless_), not a different technique.

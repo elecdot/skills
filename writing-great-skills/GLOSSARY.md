@@ -134,6 +134,12 @@ A leading word serves **predictability** twice. In the body it anchors **executi
 
 _Avoid_: keyword, term, motif
 
+### Negation
+
+_Failure mode._ Steering that names an unwanted behaviour and relies on a weak prohibition to suppress it. Naming the behaviour makes it more available, so the prohibition can half-read as an instruction to do the thing. Prefer the positive target: state the branch or behaviour the agent should take. A necessary exclusion in a **description** or a hard guardrail can earn its place when it prevents likely misrouting or harm; pair it with the positive target so attention lands on what to do instead.
+
+_Avoid_: negative prompting, prohibition-first steering
+
 ### Completion Criterion
 
 The condition that tells the agent a unit of work is done — the target it judges against. Two properties make it a lever, not just a quality. Its **clarity** (can the agent tell done from not-done?) resists **premature completion** — a vague bound ("understanding reached") lets the agent declare done and slip to the next step; this axis needs _steps_ to bite, since premature completion is a between-steps failure. Its **demand** (how much it requires) sets **legwork** — "every modified model accounted for" forces thorough work where "produce a change list" does not — and this axis is _not_ step-bound: it can bind a body of flat reference too, which is how a skill with no steps still carries an exhaustiveness bar ("every rule applied"). The strongest criteria are both checkable and exhaustive.
@@ -154,7 +160,7 @@ _Avoid_: horizon, fog of war, lookahead
 
 ### Premature Completion
 
-_Failure mode._ Ending the current step before it is genuinely done, because the agent's attention slips to being done rather than to the work. A between-steps failure: it needs **steps** to occur — a skill with no steps that quits early isn't premature completion but thin **legwork** under an unmet demand. A tug-of-war between two forces: visible **post-completion steps** (the pull forward) and the **completion criterion**'s clarity (the resistance — a sharp, checkable bar holds; a vague one gives way). Fuzziness is the necessary condition: a sharp bound resists the pull no matter how many later steps are visible, so a step that never rushes needs no defending. Two levers hold a step that does, but reach for them in order: **sharpen the bound first** — it is local and cheap. Only when the criterion is irreducibly fuzzy _and_ you actually observe the rush do you **hide the later steps** — and hiding only works across a real context boundary (a user-invoked hand-off or a subagent dispatch; an inline model-invoked call leaves the later steps in context and clears nothing). One cause of thin legwork, but distinct from it: legwork can be thin even when a step runs to full completion.
+_Failure mode._ Ending the current step before it is genuinely done, because the agent's attention slips to being done rather than to the work. A between-steps failure: it needs **steps** to occur — a skill with no steps that quits early isn't premature completion but thin **legwork** under an unmet demand. A tug-of-war between two forces: visible **post-completion steps** (the pull forward) and the **completion criterion**'s clarity (the resistance — a sharp, checkable bar holds; a vague one gives way). Fuzziness is the necessary condition: a sharp bound resists the pull no matter how many later steps are visible, so a step that never rushes needs no defending. Two levers hold a step that does, but reach for them in order: **sharpen the bound first** — it is local and cheap. Only when the criterion is irreducibly fuzzy _and_ you actually observe the rush do you **hide the later steps** — and hiding only works across a real context boundary (a user-invoked hand-off or a subagent dispatch; an inline model-invoked call leaves the later steps in context and clears nothing). Merging a sequence removes that defence by re-exposing its post-completion steps; merge only when the earlier criterion remains sharp with them in view. One cause of thin legwork, but distinct from it: legwork can be thin even when a step runs to full completion.
 
 _Avoid_: premature closure, the rush, rushing, shortcutting
 
@@ -173,6 +179,12 @@ _Avoid_: home, canonical location
 _Failure mode._ The same meaning given more than one **single source of truth**. It costs maintenance (change one place, you must change the others), costs tokens, and inflates prominence — repeating a meaning weights it on the ladder past its real rank. The accidental inverse of a **leading word**, which raises attention on purpose by repeating a token, never the meaning.
 
 _Avoid_: repetition, redundancy
+
+### Cache
+
+_Failure mode._ A fact copied into a skill even though the agent can retrieve it from the environment: configuration, command help, directory layout, or another live source. The environment remains the source of truth, so the copy can drift as soon as that source changes. A cache earns its load when the lookup is expensive, unreliable, or would repeatedly distract from the skill's job; otherwise let the agent look. Knowledge the environment cannot reveal — reasons, unwritten conventions, non-obvious gotchas — is not a cache. Distinct from **duplication**, which repeats a meaning within the instruction system; a cache duplicates the environment into it and can become **sediment** when it goes stale.
+
+_Avoid_: embedded lookup, frozen environment fact
 
 ### Relevance
 
