@@ -17,7 +17,7 @@ last-updated: 2026-08-29
 
 ## Productivity
 
-- [grilling](/grilling/SKILL.md) - Get relentlessly interviewed about a plan 
+- [grilling](/grilling/SKILL.md) - Get relentlessly interviewed about a plan
 or design until every branch of the decision tree is resolved.
 - [handoff](/handoff/SKILL.md) — Compact the current conversation into a 
 handoff document so another agent can continue the work.
