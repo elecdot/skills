@@ -1,119 +1,45 @@
 ---
 name: shape-this-quiz
-description: Reshape a problem before solving it. Use before grilling, planning, or committing when you want to inspect and learn the decision space first.
+description: Build a shared understanding of a problem, the paths worth considering, and why their differences matter. Use before detailed questioning, planning, or commitment when the framing needs exploration.
 disable-model-invocation: true
 ---
 
-**Shape the quiz; do not answer it yet.**
+**Shape the quiz before solving it.**
 
-The user's request is a starting frame, not the boundary of the problem. Build a useful map of what should be considered before detailed questioning or execution begins.
+Help both sides understand what problem they may be trying to solve, which paths are worth considering, which differences matter, and why. Treat the request as evidence of intent; the framing can change as both sides learn.
 
-Throughout shaping, investigate facts needed to establish the frame or identify its important dimensions, using available evidence and focused lookups. Defer research that only resolves the eventual choice. Where evidence remains unavailable, make the affected part of the map conditional. Update the frame, dimensions, and decision dependencies when findings change them.
+The principles below guide exploration. They are not a required sequence or response template.
 
-## 1. Recover the intent
+## Align on a revisable understanding
 
-State briefly:
+Offer a concrete interpretation the user can recognize, challenge, or refine. Distinguish their stated intent from your inferred purpose. Goals may remain tentative, coexist, or be in tension; preserve those differences instead of selecting a single objective prematurely.
 
-* what the user is currently asking;
-* what underlying outcome they appear to be trying to achieve.
+Update this understanding as evidence and user responses change it. Ask a focused question when a missing piece of user intent would materially redirect the exploration. Reserve the full decision interview for a later phase.
 
-Keep uncertainty visible where these differ.
+Treat explicitly accepted decisions as settled. Reopen them only when the user asks or new evidence undermines an important premise, and explain what changed.
 
-Complete this step when the apparent objective is clear enough to examine the framing around it.
+## Develop useful understanding
 
-## 2. Break the frame
+Look for premature limits on the goals, options, criteria, assumptions, problem boundary, or level of decision. Surface dimensions an informed practitioner would consider that the conversation has missed. Keep a frame challenge when you can explain what it could materially change. An appropriate existing frame may need little expansion.
 
-Look outside the request's current structure.
+Explain important paths and dimensions through concrete consequences: why a difference matters and what it depends on. Keep useful background proportionate and distinguish it from matters that could change the direction now.
 
-Check whether it may have prematurely fixed:
+Investigate facts needed to establish or revise the frame, using available evidence and focused lookups. Finding accessible facts is the agent's responsibility. Defer research that only resolves an eventual choice. When evidence is unavailable, make the affected understanding conditional and identify what a further check could change.
 
-* the option set;
-* the objective;
-* the evaluation criteria;
-* the problem boundary;
-* important assumptions;
-* the level at which the decision is being made.
+## Keep unresolved matters visible
 
-Consider alternative framings, including options outside any fixed set of choices in the request. Keep only those that could materially change what should be considered. If the original option space is already appropriate, say so.
+Distinguish evidence needs, user judgments, and provisional assumptions. These can overlap: a working assumption may require both investigation and a user decision. Uncertainties can remain open, with their possible effects and the next useful way to clarify them.
 
-Pay special attention to **unknown unknowns**: dimensions an informed practitioner would consider that are absent from the user's current mental model.
+Maintain one explicit **User-owned decisions** list for unresolved goals, preferences, constraints, or trade-offs requiring the user's authority. Include consequential choices surfaced anywhere, including background, frame challenges, research questions, and recommendations. Each entry names the choice, what it affects, and any prerequisite. Keep entries concise, with explanations in the main discussion.
 
-Complete this step when another plausible framing is unlikely to materially reshape the decision space.
+For example, explaining that a custom tool offers learning benefits but may delay delivery also exposes a user decision about those priorities, unless that trade-off is already settled.
 
-## 3. Build the learning map
+Before handing off, reconcile the list with the whole discussion. Capture newly exposed choices and merge duplicates. Fold resolved choices into the current understanding and remove them from the open list. Keep unresolved premises visible in conditional recommendations. Mentioning a trade-off in prose does not replace recording it in the list.
 
-Lay out the important dimensions of the problem.
+## Communicate and hand off
 
-For each dimension, explain briefly why it exists or why it matters. Show important dependencies between dimensions when useful.
+Organize the response around useful insights in short, connected prose. Use lists, headings, or diagrams when they reduce the reader's work. Explain each point once: what was discovered, why it matters, and what it changes. Let the problem determine length and structure; omit empty categories and avoid a separate summary that repeats the discussion.
 
-Distinguish:
+The handoff should leave the current understanding, consequential open matters, and next useful move clear. That move may be further exploration, a focused factual check, an interview about unresolved choices, or planning if enough is settled. Goals and disagreements can remain open at this boundary.
 
-**Core** — likely to affect the current decision.
-
-**Context** — useful for understanding the domain but unlikely to change the immediate decision.
-
-Avoid exhaustive taxonomy for its own sake. The map should improve the user's mental model, not maximize branch count.
-
-Complete this step when the major high-impact dimensions are represented and additional branches would mostly add detail rather than reshape the problem.
-
-## 4. Build the decision surface
-
-From the broader learning map, identify what actually needs resolution before a decision or plan can be committed.
-
-Classify unresolved items as:
-
-**Facts** — discoverable from tools, environment, research, or evidence. These are the agent's responsibility to investigate.
-
-**User-owned decisions** — preferences, values, goals, constraints, and trade-offs that require the user's authority.
-
-**Assumptions** — currently relied-on beliefs that have not been established.
-
-**Open uncertainties** — a temporary holding category for unresolved items whose importance is not yet known.
-
-Show prerequisite relationships when one decision cannot be sensibly resolved before another.
-
-Complete this step when each open uncertainty has been resolved, reclassified into one of the other categories, or dropped with a reason because it does not affect the current decision. If its relevance still needs evidence, carry that check forward as a Fact and state what it could change.
-
-Do not begin the full interview yet.
-
-## 5. Hand off
-
-Finish with a compact **Problem Shape** containing:
-
-### Working objective
-
-The outcome currently being optimized.
-
-### Core dimensions
-
-The dimensions likely to change the decision.
-
-### Important context
-
-Dimensions worth learning but not currently decision-critical.
-
-### Frame challenges
-
-Material alternatives or assumptions the original request may have excluded.
-
-### Facts to investigate
-
-Deferred factual questions for the agent to investigate, each linked to the judgment it could change.
-
-### User-owned decisions
-
-Questions requiring the user's preferences or authority.
-
-### Assumptions
-
-Material premises currently being carried without confirmation.
-
-### Suggested next phase
-
-Usually one of:
-
-* grill the unresolved decision surface;
-* investigate facts first;
-* proceed directly if the problem is already sufficiently specified.
-
-Stop here. Do not silently choose the unresolved branches or execute the resulting plan.
+Finish when the user has useful orientation and can see what remains unresolved; further detail should earn its place by changing that understanding. End at the handoff, leaving substantive choices and execution to the next phase.
