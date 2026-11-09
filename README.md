@@ -1,5 +1,7 @@
 # Personal SKILLs
 
+> Skills currently use a flat directory structure. Some cross-skill references use relative paths (for example, in [shape-and-grill](/shape-and-grill/SKILL.md)). If the directory structure changes, these internal links must be updated and validated.
+
 ## Sources and inspiration
 
 - [mattpocock/skills](https://github.com/mattpocock/skills)
