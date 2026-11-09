@@ -15,6 +15,9 @@
 
 ## Productivity
 
+- [shape-and-grill](/shape-and-grill/SKILL.md): Guide a discussion between
+problem exploration and scoped decision interviews, carrying shared
+understanding and open choices across both without changing the base skills.
 - [shape-this-quiz](/shape-this-quiz/SKILL.md): Build a shared understanding
 of a problem, the paths worth considering, and why their differences matter
 before detailed questioning, planning, or commitment.
