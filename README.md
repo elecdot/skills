@@ -13,6 +13,9 @@
 
 ## Productivity
 
+- [shape-this-quiz](/shape-this-quiz/SKILL.md): Build a shared understanding
+of a problem, the paths worth considering, and why their differences matter
+before detailed questioning, planning, or commitment.
 - [grilling](/grilling/SKILL.md): Interview the user relentlessly about a plan,
 decision, or idea until every branch of the design tree is resolved. The
 reusable interview primitive behind `grill-me`, `grill-with-docs`, `triage`,
