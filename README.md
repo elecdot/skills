@@ -9,15 +9,18 @@
     `zoom-out`, `code-review`, `ask-matt`, `tdd`, `to-tickets`, `to-spec`,
     `improve-codebase-architecture`, `setup-matt-pocock-skills`, `triage`,
     `domain-modeling`, `codebase-design`, `implement`, `prototype`, `research`,
-    `wayfinder`, `writing-for-agents`
+    `wayfinder`, `writing-for-agents`, `diagnosing-bugs`, `retro`
 - [skills.sh](https://www.skills.sh/)
     - `find-skills`
 
-Matt-derived skills are selectively maintained. Reliability fixes were reviewed
+Matt-derived skills are selectively maintained. Reliability fixes and the
+`diagnosing-bugs` / `retro` additions were reviewed
 against [upstream `5863806`](https://github.com/mattpocock/skills/commit/5863806dd4e15c63174bee4e7515a4256792ecfa)
 on 2026-11-16. The `CONTEXT.md` / `CONTEXT-MAP.md` convention and local invocation
 policies are retained. Existing projects refresh generated tracker docs as needed;
 this update changes the skill sources and seed templates only.
+`diagnosing-bugs` has a narrower automatic trigger for difficult debugging;
+`retro` remains user-invoked and proposes improvements before implementation.
 
 ## Productivity
 
@@ -56,6 +59,7 @@ builds your project's domain model, sharpening terminology and updating
 - [to-spec](/to-spec/SKILL.md): Turn the current conversation into a spec and publish it to the issue tracker. No interview, just synthesizes what you've already discussed.
 - [to-tickets](/to-tickets/SKILL.md): Break any plan, spec, or conversation into a set of tracer-bullet tickets, each declaring its blocking edges, written as text in a local file, or as native blocking links on a real tracker.
 - [implement](/implement/SKILL.md): Build the work described by a spec or set of tickets, driving `/tdd` at pre-agreed seams and closing out with `/code-review` before committing.
+- [retro](/retro/SKILL.md): Review a coding session and suggest improvements to the agent's environment, using session evidence and listing candidates by severity.
 - [wayfinder](/wayfinder/SKILL.md): Plan a huge chunk of work, more than one agent session can hold, as a shared map of decision tickets on the issue tracker, and resolve them one at a time until the way to the destination is clear.
 - [improve-codebase-architecture](/improve-codebase-architecture/SKILL.md): Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.
 
@@ -63,6 +67,7 @@ builds your project's domain model, sharpening terminology and updating
 
 - [acquire-tools](/acquire-tools/SKILL.md): Preview a missing-tool plan, use
 an appropriate runner, and inspect the resulting artifacts and assets.
+- [diagnosing-bugs](/diagnosing-bugs/SKILL.md): Diagnose difficult bugs and performance regressions through a tight reproduction loop, minimisation, falsifiable hypotheses, targeted instrumentation, and regression testing.
 - [domain-modeling](/domain-modeling/SKILL.md): Actively build and sharpen a project's domain model: challenge terms against the glossary, stress-test with edge-case scenarios, and update `CONTEXT.md` and ADRs inline.
 - [codebase-design](/codebase-design/SKILL.md): Shared discipline and vocabulary for designing deep modules: a lot of behaviour behind a small interface, placed at a clean seam, testable through that interface.
 - [code-review](/code-review/SKILL.md): Two-axis review of the diff since a fixed point: **Standards** (does it follow the repo's coding standards, plus a Fowler smell baseline?) and **Spec** (does it faithfully implement the originating issue/spec?), run as parallel sub-agents so neither pollutes the other.
