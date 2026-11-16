@@ -13,6 +13,12 @@
 - [skills.sh](https://www.skills.sh/)
     - `find-skills`
 
+Matt-derived skills are selectively maintained. Reliability fixes were reviewed
+against [upstream `5863806`](https://github.com/mattpocock/skills/commit/5863806dd4e15c63174bee4e7515a4256792ecfa)
+on 2026-11-16. The `CONTEXT.md` / `CONTEXT-MAP.md` convention and local invocation
+policies are retained. Existing projects refresh generated tracker docs as needed;
+this update changes the skill sources and seed templates only.
+
 ## Productivity
 
 - [shape-this-quiz](/shape-this-quiz/SKILL.md): Build a shared understanding
