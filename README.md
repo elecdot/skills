@@ -65,8 +65,11 @@ builds your project's domain model, sharpening terminology and updating
 
 **Model-invoked**:
 
-- [acquire-tools](/acquire-tools/SKILL.md): Preview a missing-tool plan, use
-an appropriate runner, and inspect the resulting artifacts and assets.
+- [acquire-tools](/acquire-tools/SKILL.md): Select suitable task tools,
+isolate temporary state, and manage project dependency changes.
+  Provisional: current behavioral benefit is unverified. Tool-selection bias
+  may have diminished; direct manifest edits occurred, but dependency damage
+  has not been observed. Reassess each branch against runs without this skill.
 - [diagnosing-bugs](/diagnosing-bugs/SKILL.md): Diagnose difficult bugs and performance regressions through a tight reproduction loop, minimisation, falsifiable hypotheses, targeted instrumentation, and regression testing.
 - [domain-modeling](/domain-modeling/SKILL.md): Actively build and sharpen a project's domain model: challenge terms against the glossary, stress-test with edge-case scenarios, and update `CONTEXT.md` and ADRs inline.
 - [codebase-design](/codebase-design/SKILL.md): Shared discipline and vocabulary for designing deep modules: a lot of behaviour behind a small interface, placed at a clean seam, testable through that interface.
