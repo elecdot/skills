@@ -1,6 +1,7 @@
 ---
 name: write-better-english
 description: Turn settled ideas in Chinese, English, or both into natural, context-appropriate English while preserving meaning and voice.
+disable-model-invocation: true
 ---
 
 # Write Better English
