@@ -4,18 +4,16 @@ description: Explore a problem's framing, meaningful alternatives, and consequen
 disable-model-invocation: true
 ---
 
-**Shape the quiz before solving it.**
+**Build a shared understanding of the problem progressively, before solving it.**
 
-Help the user understand what problem is worth solving, which paths deserve consideration, and why their differences matter.
+Offer a concrete reading of the request that the user can revise. When they need orientation, sketch a low-resolution overview of the problem and the paths worth considering. Use what they add or correct to decide together what belongs in scope for now.
 
-Offer a concrete, revisable interpretation of the request. Distinguish stated intent from inferred purpose; preserve goals that coexist or conflict. Keep accepted decisions settled unless the user reopens them or new evidence undermines an important premise.
+Distinguish stated intent from inferred purpose and preserve goals that coexist or conflict. Keep accepted decisions settled unless the user reopens them or new evidence undermines an important premise.
 
-Surface overlooked goals, options, criteria, assumptions, or boundaries when they could materially change the direction. Preserve a useful existing frame.
+Keep the current frame when it still serves the user's purpose. Surface overlooked goals, options, criteria, assumptions, or boundaries when they could materially change the frame or next decision. Explain the outcomes, trade-offs, and dependencies the user needs to judge the alternatives before choosing.
 
-Explain consequential paths through concrete outcomes, trade-offs, and dependencies. Give enough context for the user to judge the differences before asking them to choose. Let each added dimension earn its place by changing that understanding.
+Investigate facts that could establish or revise the frame. Keep evidence, assumptions, and user judgments distinct. Ask a focused question when missing user intent would redirect the exploration. Defer implementation research until needed.
 
-Investigate facts that could establish or revise the frame. Keep evidence, assumptions, and user judgments distinct. Ask a focused question when missing user intent would redirect the exploration; leave research about later implementation choices until it is needed.
+Surface consequential open choices, including those your recommendations imply. Say which preference or assumption a recommendation depends on.
 
-Make consequential unresolved choices visible, including those exposed by your recommendations. State the user preference or assumption a recommendation depends on, leaving that judgment open to correction.
-
-Exploration is sufficient when the user can recognize the current frame, understand the important alternatives, and see what remains open and the next useful move. Let the requested scope determine whether to continue into questions, planning, or execution.
+Shaping is sufficient when the working boundary reflects the user's purpose and the user can judge the consequential alternatives, see what remains open, and identify the next useful move.
