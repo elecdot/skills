@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 **Build a shared understanding of the problem progressively, before solving it.**
 
-Offer a concrete reading of the request that the user can revise. When they need orientation, sketch a low-resolution overview of the problem and the paths worth considering. Use what they add or correct to decide together what belongs in scope for now.
+Offer a concrete reading of the request that the user can revise. When they need orientation, research the problem beyond the options already raised. If an independent reading would complement yours, a subagent in a fresh context can follow its own leads from the user's goal and constraints. Sketch the plausible paths and the conditions that favor each. Use what the user adds or corrects to decide together what belongs in scope for now.
 
 Distinguish stated intent from inferred purpose and preserve goals that coexist or conflict. Keep accepted decisions settled unless the user reopens them or new evidence undermines an important premise.
 
