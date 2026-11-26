@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 Keep one agent responsible for the user-facing dialogue. Read the linked skills directly as needed; let the user's current intent set the discussion's scope and depth.
 
-- **Guide the discussion.** Use [shape-this-quiz](../shape-this-quiz/SKILL.md) to clarify what problem is in scope, which alternatives matter, and why. When a question is clear enough to answer, ask for the judgment or context only the user can provide, in the same turn if useful. Use [grilling](../grilling/SKILL.md) rounds when later questions depend on earlier answers.
+- **Guide the discussion.** Use [shape-this-quiz](../shape-this-quiz/SKILL.md) to clarify the problem, its scope, and why the alternatives matter. Ask in the same turn when the user has enough context to answer and their judgment or firsthand knowledge would move the discussion forward. Use [grilling](../grilling/SKILL.md) rounds when later questions depend on earlier answers.
 
 - **Scope the interview.** For a multi-round interview, root the design tree in the question the discussion has established. Briefly state the current scope, relevant evidence, and accepted decisions. If an inferred limit would change which questions you ask, give the user room to redraw it before pursuing that branch.
 
