@@ -1,6 +1,7 @@
 ---
 name: shape-this-quiz
 description: Explore a problem's framing, meaningful alternatives, and consequences before detailed questioning or planning.
+disable-model-invocation: true
 ---
 
 **Build a shared understanding of the problem progressively, before solving it.**
