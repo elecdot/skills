@@ -1,6 +1,7 @@
 ---
 name: shape-and-grill
 description: Coordinate exploration and scoped grilling when the user needs both orientation and help working through decisions.
+disable-model-invocation: true
 ---
 
 Keep the same agent responsible for dialogue. Read the linked skills directly as needed; let the user's current intent set the discussion's scope and depth.
